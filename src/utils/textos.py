@@ -19,7 +19,7 @@ MENSAGENS_PREVIA = [
     "Aiiiin, só de saber que você quer espiar... já sobe aquele arrepio aqui 😈💦\n\n"
     "Mas tudo bem... vou ser boazinha e deixar. No grupo de prévias você vai provar só a pontinha do que eu tenho pra oferecer... cuidado pra não viciar, hein? 💋",
 
-    "Hmm, você é do tipo 'só a cabecinha', né, safadinho(a)? 😏\n\n"
+    "Hmm, você é do tipo 'só a cabecinha', né, safadinho(a)? �\n\n"
     "No grupo de prévias eu te deixo sentir o gostinho — mas depois não vem chorar querendo mais... porque a vontade vai te consumir inteiro(a). 🔥🍑",
 
     "Ai, seu taradinho(a)... já chegou querendo ver o que não devia 😜\n\n"
@@ -36,7 +36,8 @@ HELP_MSG = (
     "✨ <b>/start</b> – Começar do zero... tipo quando a gente finge que é a primeira vez. 🥵\n"
     "🔥 <b>/planos</b> – Ver tudo que eu escondo... sem censura, sem vergonha. 😏\n"
     "👀 <b>/previas</b> – Só uma espiadinha marota... pra ficar querendo mais. 😘\n"
-    "🆘 <b>/help</b> – Se perder de novo, é só chamar, neném. 💋\n\n"
+    "🆘 <b>/help</b> – Se perder de novo, é só chamar, neném. 💋\n"
+    "🏠 <b>/menu</b> – Voltar ao menu principal para explorar minhas opções. 😉\n\n"
     "E se o fogo for grande demais pra aguentar sozinho(a), fala comigo direto aqui: 👉 <a href='{suporte}'>suporte</a>"
 )
 
@@ -86,7 +87,8 @@ RESPOSTAS_BOTOES = {
     "tem_18": {
         "mensagem": (
             "😏 Hmmm, maior de idade e cheio(a) de más intenções, né? "
-            "Adoro... Agora me conta, como eu posso te chamar enquanto te deixo sem ar? 🥵💬"
+            "Adoro... Agora me conta, como eu posso te chamar enquanto te deixo sem ar? 🥵💬\n\n"
+            "👉 Por favor, digite seu nome completo ou como gostaria de ser chamado(a):"
         ),
         "etapa": "coletar_nome"
     },
@@ -94,15 +96,17 @@ RESPOSTAS_BOTOES = {
         "mensagem": (
             "🚫 Tão novinho assim? Que peninha... "
             "Aqui é só pros grandinhos que aguentam o tranco, bebê.\n\n"
-            "Vai crescer e volta logo... Quem sabe um dia você não aguenta a pressão? 😈"
+            "Vai crescer e volta logo... Quem sabe um dia você não aguenta a pressão? 😈\n\n"
+            "Se precisar de ajuda ou quiser começar de novo, digite /start ou /help."
         ),
-        "etapa": "nao_tem_18"
+        "etapa": "nao_tem_18" # Mantém a etapa para evitar processamento de mensagens subsequentes de forma errada
     },
     "nao_ver_conteudo": {
         "mensagem": (
             "🙈 Awnnn, tímido(a) desse jeito? "
             "Tudo bem, eu entendo... Nem todo mundo tá pronto pra tanta ousadia.\n\n"
-            "Mas ó, quando bater aquela vontade de brincar sem vergonha, é só me chamar, tá? 🔥😉"
+            "Mas ó, quando bater aquela vontade de brincar sem vergonha, é só me chamar, tá? 🔥😉\n\n"
+            "Você pode explorar minhas opções no /menu ou digitar /start para recomeçar."
         ),
         "etapa": "nao_ver_conteudo"
     }
@@ -122,4 +126,15 @@ MENSAGEM_PEDIDO_NEGADO = (
     "Mas relaxa, ninguém vai te deixar na seca por muito tempo... ainda tem jeito de virar esse jogo. "
     "Dá aquela choradinha básica no suporte — talvez com jeitinho (ou uma promessa indecente), a gente libera sua entrada.\n\n"
     "💬 Clica no botão, corre lá e mostra que você sabe jogar o jogo. A vida é pros ousados, bebê."
+)
+
+MSG_COMANDO_DESCONHECIDO = (
+    "🤔 Opa! Não entendi o que você quis dizer, safadinho(a).\n\n"
+    "Parece que a gente se desencontrou aqui. Que tal dar uma olhadinha no /menu para ver minhas opções "
+    "ou digitar /help para uma lista de comandos? 😉"
+)
+
+MENU_PRINCIPAL_MSG = (
+    "😏 Olá, {nome}! Bem-vindo(a) de volta ao nosso cantinho da ousadia. O que você quer fazer agora?\n\n"
+    "Escolha uma opção abaixo para continuar nossa brincadeira: 😈"
 )
